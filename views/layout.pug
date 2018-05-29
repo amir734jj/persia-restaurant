@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  head
+    title
+      | Persia Restaurant
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
+    script(src='javascripts/jquery.min.js')
+    script(src='javascripts/bootstrap.min.js')
+    script(src='javascripts/angular.min.js')
+
+  body(ng-app='app')
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Persia Restaurant
+        #myNavbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li(class=pageURL == "/student/register" ? "active" : "")
+              a(href='/menu')
+                | Menu
+            li(class=pageURL == "/user" ? "active" : "")
+              a(href='/catering')
+                | Catering
+            li(class=pageURL == "/student/list" ? "active" : "")
+              a(href='/location')
+                | Location
+
+    .container-full
+      block content
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/script.js')
