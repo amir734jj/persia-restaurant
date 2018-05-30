@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  .home-page(ng-controller='homeController')
+  .home(ng-controller='homeController')
     video#video-playback(autoplay='', muted='', loop='')
       source(src='rain.mp4', type='video/mp4')
       | Your browser does not support HTML5 video.
@@ -10,3 +10,5 @@ block content
       p
         | Our philosophy is to serve the best and most affordable Kebab in Toronto
       button#video-control(ng-click='videoControl()') Pause
+
+  link(rel='stylesheet', href='/stylesheets/pages/home.css')

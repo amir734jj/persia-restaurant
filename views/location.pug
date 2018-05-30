@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .location
+    .row
+      .col-md-9
+        .embed-responsive.embed-responsive-16by9
+          iframe.embed-responsive-item(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11658.269807462926!2d-87.8881498!3d43.0715641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb63186dbebec2f1a!2sShawarma+House!5e0!3m2!1sen!2sus!4v1527637784958', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
+
+      .col-md-3
+        .container-fluid
+          h3 
+            | Some location
+          p 3229, 2921 N Oakland Ave, Milwaukee, WI 53211
+          hr
+
+          h3 Find Us On Social Media:
+          label
+            i.fab.fa-instagram.fa-2x.fa-fw
+            p Instagram  
+          label
+            i.fab.fa-facebook.fa-2x.fa-fw
+            p Facebook  
+
+    link(rel='stylesheet', href='/stylesheets/pages/location.css')

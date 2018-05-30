@@ -1,0 +1,11 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* catering page */
+.catering img {
+    width: 100%;
+}
+  
+/* end catering page */

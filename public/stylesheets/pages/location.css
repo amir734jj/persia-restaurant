@@ -1,0 +1,24 @@
+/* location page */
+.location .map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.location .map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.location p {
+    vertical-align: text-top;
+    height: 100%;
+    line-height: 30px;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+/* end location page */
