@@ -46,7 +46,7 @@ block content
     .row
       .col-md-5.col-md-offset-5
         h1
-          | Plates
+          | Main Plates
 
     .row
       .col-sm-5
@@ -54,7 +54,7 @@ block content
           .panel-heading
             | Salads
           ul.list-group
-            li.list-group-item Greek Salad
+            li.list-group-item KUBIDEH KEBAB
               label.pull-right $6
             li.list-group-item Season Salad
               label.pull-right $6
@@ -85,24 +85,35 @@ block content
     .row
       .col-md-5.col-md-offset-5
         h1
-          | Gallery
+          | Photo Gallery
 
+    .container-flex
+      .col-md-3
+        a(href='images/sitting.png')
+          .thumbnail
+            img(src='/images/sitting.png')
+            .caption
+              p  Welcoming atmosphere
+      .col-md-3
+        a(href='images/sandwich.png')
+          .thumbnail
+            img(src='/images/sandwich.png')
+            .caption
+              p Shawarma sandwich
+      .col-md-3
+        a(href='images/plate.png')
+          .thumbnail
+            img(src='/images/plate.png')
+            .caption
+              p Kefte kebab with Basmati rice
 
-    .row
-      .col-md-4
-        .thumbnail
-          img(src='/images/square.jpg', alt='Lights', style='width:100%')
-          .caption
-            p Lorem ipsum...
-      .col-md-4
-        .thumbnail
-          img(src='/images/square.jpg', alt='Lights', style='width:100%')
-          .caption
-            p Lorem ipsum...
-      .col-md-4
-        .thumbnail
-          img(src='/images/square.jpg', alt='Lights', style='width:100%')
-          .caption
-            p Lorem ipsum...
+      .col-md-3
+        a(href='images/kebab.png')
+          .thumbnail
+            img(src='images/kebab.png')
+            .caption
+              p Sultani kebab
+
+                  
 
   link(rel='stylesheet', href='/stylesheets/pages/menu.css')
