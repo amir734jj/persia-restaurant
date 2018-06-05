@@ -5,6 +5,8 @@ html(lang="en")
       | Persia Restaurant
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="description" content="Persia Restaurant, middle eastern restaurant, 9325 Yonge St, Richmond Hill, ON L4C 1V4, Canada")
+
     link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
     link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.13/css/all.css')
@@ -21,18 +23,19 @@ html(lang="en")
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='/') Persia Restaurant
+          a.navbar-brand(href='/')
+            strong Persia Restaurant
         #myNavbar.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li(class=pageURL == "/student/register" ? "active" : "")
               a(href='/menu')
-                | Menu
+                strong Menu
             li(class=pageURL == "/user" ? "active" : "")
               a(href='/catering')
-                | Catering
+                strong Catering
             li(class=pageURL == "/student/list" ? "active" : "")
               a(href='/location')
-                | Location
+                strong Location
 
 
     link(rel='stylesheet', href='/stylesheets/style.css')
