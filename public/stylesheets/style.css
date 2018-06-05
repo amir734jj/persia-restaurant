@@ -41,4 +41,9 @@ video::-internal-media-controls-overlay-cast-button {
   }
 }
 
+video {
+  filter: saturate(1);
+  -webkit-filter: saturate(1);
+}
+
 /* end global */
